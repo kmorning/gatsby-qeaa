@@ -21,7 +21,7 @@ module.exports = {
   rules: {
     // Place to specify ESLint rules.
     //'@typescript-eslint/interface-name-prefix': ['error', { prefixWithI: 'always' }],
-    //'react/prop-types': 'off',
+    'react/prop-types': 'off',
     //'@typescript-eslint/ban-ts-ignore': 'off'
     'max-len': [
       'error',
