@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import React from 'react'
 
@@ -26,7 +28,12 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
     `
   )
   return (
-    <div>
+    <div
+      sx={{
+        margin: '0 auto',
+        maxWidth: '700px'
+      }}
+    >
       <header>
         <Link to="/">
           <h3>{data.site.siteMetadata.title}</h3>
