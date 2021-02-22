@@ -16,12 +16,14 @@
     "type-check:watch": "npm run type-check -- --watch"
   },
   "dependencies": {
+    "@theme-ui/typography": "^0.3.5",
     "eslint-plugin-react": "^7.22.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-theme-ui": "^0.3.5",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "theme-ui": "^0.3.5"
+    "theme-ui": "^0.3.5",
+    "typography-theme-kirkham": "^0.16.19"
   },
   "devDependencies": {
     "@types/node": "^14.14.25",

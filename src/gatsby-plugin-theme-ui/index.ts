@@ -1,3 +1,8 @@
+import { toTheme } from '@theme-ui/typography'
+import theme from 'typography-theme-kirkham'
+
+const typography = toTheme(theme)
+
 export default {
   colors: {
     text: '#333',
@@ -5,7 +10,8 @@ export default {
     primary: '#639',
     secondary: '#ff6347',
     white: '#fff'
-  },
+  }
+  /*
   fonts: {
     base: 'system-ui, sans-serif',
     secondary: 'Menlo, monospace'
@@ -32,4 +38,5 @@ export default {
   },
   space: [0, 8, 16, 32, 64],
   breakpoints: ['768px', '1025px', '1290px']
+  */
 }
