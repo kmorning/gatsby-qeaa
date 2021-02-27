@@ -16,10 +16,12 @@
     "type-check:watch": "npm run type-check -- --watch"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "eslint-plugin-react": "^7.22.0",
     "gatsby": "^2.26.1",
     "gatsby-plugin-theme-ui": "^0.3.5",
+    "gatsby-source-graphql": "^2.14.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "theme-ui": "^0.3.5"
