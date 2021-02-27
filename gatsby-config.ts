@@ -3,6 +3,12 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+import dotenv from 'dotenv'
+
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 export default {
   /* Your site config here */
   siteMetadata: {
