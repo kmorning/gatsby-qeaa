@@ -1,35 +1,36 @@
 export default {
-  colors: {
-    text: '#333',
-    background: '#fff',
-    primary: '#639',
-    secondary: '#ff6347',
-    white: '#fff'
+  sizes: {
+    container: 1160
   },
   fonts: {
-    base: 'system-ui, sans-serif',
-    secondary: 'Menlo, monospace'
+    body: 'Georgia, Cambria, "Times New Roman", Times, serif',
+    heading: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   },
+  fontSizes: [12, 14, 16, 20, 24, 32, 48],
   fontWeights: {
-    normal: 400,
-    medium: 500,
-    bold: 700
+    body: 400,
+    heading: 700
   },
   lineHeights: {
-    normal: 1.5,
-    medium: 1.4
+    body: 1.5,
+    heading: 1.125
   },
-  fontSizes: {
-    xs: 12,
-    sm: 16,
-    md: 32,
-    lg: 48,
-    xl: 64
+  colors: {
+    text: '#392a25',
+    muted: '#aaaaaa',
+    background: '#f8f8f8',
+    foreground: '#ffffff',
+    primary: '#92b955',
+    secondary: '#9f8a6d'
   },
-  letterSpacings: {
-    normal: '0',
-    wide: '0.25em'
-  },
-  space: [0, 8, 16, 32, 64],
-  breakpoints: ['768px', '1025px', '1290px']
+  space: [0, 4, 8, 16, 32, 48],
+  breakpoints: ['40em', '64em', '80em']
+  /*
+  styles: {
+    div: {
+      maxWidth: 1160,
+      padding: 3
+    }
+  }
+  */
 }

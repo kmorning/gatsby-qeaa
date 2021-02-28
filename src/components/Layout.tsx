@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import { graphql, Link, useStaticQuery } from 'gatsby'
-import React from 'react'
+import Container from './Container'
 
 interface ILayoutProps {
   children: React.ReactNode
@@ -30,16 +30,37 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
     <div
       sx={{
-        margin: '0 auto',
-        maxWidth: '700px'
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
       }}
     >
-      <header>
-        <Link to="/">
-          <h3>{data.site.siteMetadata.title}</h3>
-        </Link>
+      <header
+        sx={{
+          width: '100%'
+        }}
+      >
+        <Container>
+          <Link to="/">
+            <h3>{data.site.siteMetadata.title}</h3>
+          </Link>
+        </Container>
       </header>
-      {children}
+      <main
+        sx={{
+          width: '100%',
+          flex: '1 1 auto'
+        }}
+      >
+        <Container>{children}</Container>
+      </main>
+      <footer
+        sx={{
+          width: '100%'
+        }}
+      >
+        <Container>Footer</Container>
+      </footer>
     </div>
   )
 }
