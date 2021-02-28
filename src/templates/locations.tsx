@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 
-interface LocationsQueryProps {
+interface LocationsProps {
   data: {
     strapi: {
       locations: [
@@ -16,7 +16,7 @@ interface LocationsQueryProps {
   }
 }
 
-const Locations: React.FC<LocationsQueryProps> = ({ data }) => (
+const Locations: React.FC<LocationsProps> = ({ data }) => (
   <div>
     <h1>My Locations</h1>
     <table>
@@ -40,10 +40,12 @@ const Locations: React.FC<LocationsQueryProps> = ({ data }) => (
   </div>
 )
 
+//query Locations($publicationState: STRAPI_PublicationState!)
+//    locations(publicationState: $publicationState) {
 export const query = graphql`
-  query MyQuery {
+  query Locations($publicationState: STRAPI_PublicationState!) {
     strapi {
-      locations(publicationState: PREVIEW) {
+      locations(publicationState: $publicationState) {
         id
         name
         address
