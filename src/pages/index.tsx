@@ -1,4 +1,6 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx, Image } from 'theme-ui'
+
 import Layout from '../components/Layout'
 
 const Home: React.FC = () => (
@@ -8,7 +10,7 @@ const Home: React.FC = () => (
     <p>
       If you were looking for our actual AA website, click <a href="https://www.quinteeastaa.org">here</a>.
     </p>
-    <img
+    <Image
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Wandeling_over_het_Hulshorsterzand-Hulshorsterheide_07-03-2020._%28d.j.b%29_20.jpg/1920px-Wandeling_over_het_Hulshorsterzand-Hulshorsterheide_07-03-2020._%28d.j.b%29_20.jpg"
       alt="Serenity"
     />
