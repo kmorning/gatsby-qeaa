@@ -44,7 +44,7 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions 
     path: `/locations`,
     component: locationsComponent,
     context: {
-      publicationState: process.env.NODE_ENV === `production` ? `LIVE` : `PREVIEW`
+      publicationState: process.env.NODE_ENV === `development` ? `PREVIEW` : `LIVE`
     }
   })
 }
