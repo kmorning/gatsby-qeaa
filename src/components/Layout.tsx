@@ -37,7 +37,8 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
     >
       <header
         sx={{
-          width: '100%'
+          width: '100%',
+          variant: 'layout.header'
         }}
       >
         <Container>
@@ -49,17 +50,19 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
       <main
         sx={{
           width: '100%',
-          flex: '1 1 auto'
+          flex: '1 1 auto',
+          variant: 'layout.main'
         }}
       >
         <Container>{children}</Container>
       </main>
       <footer
         sx={{
-          width: '100%'
+          width: '100%',
+          variant: 'layout.footer'
         }}
       >
-        <Container>Footer</Container>
+        <Container>Copyright &copy; 2021 Sober Web Designs</Container>
       </footer>
     </div>
   )
